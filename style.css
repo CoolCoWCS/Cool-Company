@@ -430,6 +430,7 @@ body.dark-theme .card,
 body.dark-theme .systems-page,
 body.dark-theme .storage-page,
 body.dark-theme .peripherals-page,
+body.dark-theme .peripherals-page .peripheral-item
 body.dark-theme .component-card {
     background-color: #1e293b;
     color: #ddd;
