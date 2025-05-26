@@ -365,3 +365,38 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+/* js improvements */
+
+/* buttons style */
+.btn-theme, .btn-scroll {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 10px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-theme:hover, .btn-scroll:hover {
+    background-color: #555;
+}
+
+/* scrol btn */
+.btn-scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    z-index: 100;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #eee;
+}
