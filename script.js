@@ -1,14 +1,26 @@
-// Toggle Theme
+// togle theme
 const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+    toggleThemeBtn.textContent = '☀️ Light Mode';
+} else {
+    toggleThemeBtn.textContent = '🌙 Dark Mode';
+}
+
 toggleThemeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
 
-    if(document.body.classList.contains('dark-theme')){
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
         toggleThemeBtn.textContent = '☀️ Light Mode';
     } else {
+        localStorage.setItem('theme', 'light');
         toggleThemeBtn.textContent = '🌙 Dark Mode';
     }
 });
+
 // Scroll to Top
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
