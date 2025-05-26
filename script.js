@@ -1,4 +1,14 @@
+// Toggle Theme
+const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+toggleThemeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
 
+    if(document.body.classList.contains('dark-theme')){
+        toggleThemeBtn.textContent = '☀️ Light Mode';
+    } else {
+        toggleThemeBtn.textContent = '🌙 Dark Mode';
+    }
+});
 // Scroll to Top
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
